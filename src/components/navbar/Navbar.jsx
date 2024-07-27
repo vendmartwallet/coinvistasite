@@ -35,13 +35,13 @@ const Navbar = () => {
               <span>
                 <PiSignInBold size="20" />
               </span>{" "}
-              SIGN IN
+              <Link to="/login">SIGN IN</Link>
             </div>
             <div className="signup text-sm hover:cursor-pointer flex gap-1 items-center">
               <span>
                 <IoPersonAdd size="20" />
               </span>{" "}
-              SIGN UP
+              <Link to="/register">SIGN UP</Link>
             </div>
           </div>
         </div>
