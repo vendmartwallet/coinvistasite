@@ -6,6 +6,8 @@ import Terms from "./pages/terms/Terms";
 import Faq from "./pages/faq/Faq";
 import About from "./pages/about/About";
 import ContactUs from "./pages/contact/ContactUs";
+import Login from "./pages/login/Login";
+import SignUp from "./pages/signup/SignUp";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
            <Route path='/about' element = {<About/>}/>
            <Route path='/terms' element = {<Terms/>}/>
            <Route path='/contactUs' element = {<ContactUs/>}/>
+           <Route path='/login' element = {<Login/>}/>
+           <Route path='/register' element = {<SignUp/>}/>
          </Routes>
       </BrowserRouter>
     </div>
