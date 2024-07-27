@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { HiMiniCurrencyDollar } from 'react-icons/hi2';
 import { FaRegUser } from 'react-icons/fa';
 import { BsFillMenuButtonWideFill } from 'react-icons/bs';
-// import Modal from '../modal/Modal';
 import Navbar from '../../components/navbar/Navbar';
 import SideBar from '../../components/sidebar/SideBar';
+import Footer from '../../components/footer/Footer';
+import NextView from '../../components/nextview/NextView';
 
 const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);
@@ -22,11 +23,11 @@ const Dashboard = () => {
       <Navbar />
       <div className="flex gap-[60px] bg-[#3D5185]">
         <div className="hidden sm:block">
-          <SideBar/>
+          <SideBar />
         </div>
 
         <div className="w-[80%] sm:w-[65%] pt-[80px] sm:pt-[50px]">
-          <div className="block sm:hidden bg-[#071332] mb-[10px] ml-[40px] w-[100%] py-[10px]">
+          {/* <div className="block sm:hidden bg-[#071332] mb-[10px] ml-[40px] w-[100%] py-[10px]">
             <div className="flex items-center justify-between px-[15px]">
               <BsFillMenuButtonWideFill
                 size={30}
@@ -35,7 +36,7 @@ const Dashboard = () => {
                 onClick={handleOpenModal}
               />
             </div>
-          </div>
+          </div> */}
           <div className="bg-[#071332] flex justify-between items-center text-white py-[20px] px-[3vw] rounded ml-[40px] sm:ml-0 w-[100%]">
             <p className="text-[30px] text-gray-400">
               Total Balance <span className="block text-[20px]">0.00USD</span>
@@ -66,7 +67,9 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="bg-[#071332] w-[100%] mt-[40px] h-[40%] rounded ml-[40px] sm:ml-0"></div>
+          <div className="bg-[#071332] w-[100%] mt-[40px] h-[40%] rounded mb-[30px] ml-[40px] sm:ml-0">
+            <NextView/>
+          </div>
         </div>
       </div>
 
@@ -75,6 +78,7 @@ const Dashboard = () => {
           <Modal handleCloseModal={handleCloseModal} />
         </div>
       )} */}
+      <Footer/>
     </>
   );
 };

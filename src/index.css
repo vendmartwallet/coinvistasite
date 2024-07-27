@@ -49,5 +49,9 @@
     .links {
         @apply flex gap-[10px] bg-[#071332] mx-[10px] text-white my-3 py-2.5 px-4 rounded-xl  hover:bg-blue-700 items-center
     }
+
+    .input {
+      @apply bg-[#3D5185] border border-white w-[100%] sm:w-[34rem] py-[10px] pl-[5px] text-slate-400 text-[20px] px-[10px]
+    }
 }
   

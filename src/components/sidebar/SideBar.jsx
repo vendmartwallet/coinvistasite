@@ -11,7 +11,7 @@ import { FaRegUser } from 'react-icons/fa';
 const SideBar = () => {
   return (
     <>
-      <div className="w-80 px-2 text-black  overflow-0 bg-[#071332] pt-[30px]">
+      <div className="w-80 px-2 text-black  overflow-0 bg-[#071332] py-[30px]">
         <div className="links">
           <FaRegUser size={40}/>
           <div>
@@ -21,27 +21,27 @@ const SideBar = () => {
         </div>
 
         <nav className="py-[40px] flex flex-col gap-[15px] bg-[#3D5185] rounded">
-          <Link to="/overview" className="links">
+          <Link to="/dashboard" className="links">
             <MdDashboard />
             Dashboard
           </Link>
-          <Link to="/profile" className="links">
+          <Link to="/deposit" className="links">
             <RiLuggageDepositFill />
             Deposit
           </Link>
-          <Link to="/facilitator" className="links">
+          <Link to="/withdrawal" className="links">
             <BiMoneyWithdraw />
             Withdrawal
           </Link>
-          <Link to="/courses" className="links">
+          <Link to="/transhistory" className="links">
             <AiOutlineTransaction />
             Transaction history
           </Link>
-          <Link to="/resources" className="links">
+          <Link to="/customer" className="links">
             <FcCustomerSupport />
             Customer support
           </Link>
-          <Link to="/chat" className="links">
+          <Link to="/logout" className="links">
             <HiOutlineLogout />
             Logout
           </Link>

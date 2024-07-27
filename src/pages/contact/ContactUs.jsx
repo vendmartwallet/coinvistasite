@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
+import TradingServices from '../../components/tradeservice/TradingServices'
 
 const ContactUs = () => {
   return (
@@ -12,6 +13,7 @@ const ContactUs = () => {
             CONTACT US
           </div>
         <div className='h-[70vh]'></div>
+        <TradingServices/>
         <Footer />
       </div>
     </div>
