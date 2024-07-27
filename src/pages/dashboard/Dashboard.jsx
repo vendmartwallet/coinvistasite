@@ -10,13 +10,7 @@ import NextView from '../../components/nextview/NextView';
 const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const handleOpenModal = () => {
-    setShowModal(!showModal);
-  };
 
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
 
   return (
     <>
