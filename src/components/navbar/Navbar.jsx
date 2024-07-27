@@ -59,7 +59,7 @@ const Navbar = () => {
                 <Link to="/accountType">ACCOUNT TYPE</Link>
               </li>
               <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
-                <Link to="/faq">F.A.Q</Link>
+                <Link to="/faq">FAQs</Link>
               </li>
               <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
                 <Link to="/terms">TERMS</Link>
