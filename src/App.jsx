@@ -10,6 +10,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Deposit from "./pages/deposit/Deposit";
 import Login from "./pages/login/Login";
 import SignUp from "./pages/signup/SignUp";
+import CustomerSupport from "./components/customerSupport/CustomerSupport";
 
 const App = () => {
   return (
@@ -26,6 +27,8 @@ const App = () => {
           <Route path='/deposit' element={<Deposit />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<SignUp />} />
+          <Route path='/customer' element={<CustomerSupport/>} />
+
         </Routes>
       </BrowserRouter>
     </div>
