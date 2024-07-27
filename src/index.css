@@ -43,4 +43,11 @@
     background-color: rgba(2, 2, 101, 0.762);
     background-blend-mode: color;
   }
+
+  @layer components {
+   
+    .links {
+        @apply flex gap-[10px] bg-[#071332] mx-[10px] text-white my-3 py-2.5 px-4 rounded-xl  hover:bg-blue-700 items-center
+    }
+}
   
