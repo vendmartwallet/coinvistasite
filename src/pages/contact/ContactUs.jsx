@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <>
       <div>
-        <div className="contact">
+        <div className="contact" data-aos="flip-left">
           <Navbar />
           <div className="ourplans text-center py-20 text-4xl font-semibold text-white">
             CONTACT US

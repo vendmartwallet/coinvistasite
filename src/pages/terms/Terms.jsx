@@ -6,7 +6,7 @@ const Terms = () => {
   return (
     <>
       <div>
-        <div className="terms">
+        <div className="terms" data-aos="flip-right">
           <Navbar />
           <div className="ourplans text-center py-20 text-4xl font-semibold text-white">
             RULES & AGREEMENTS

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const SignUp = () => {
   return (
     <>
-      <div className="bg-[#161C2D] min-h-screen flex flex-col px-5 lg:items-center py-16">
+      <div className="bg-[#161C2D] min-h-screen flex flex-col px-5 lg:items-center py-16" data-aos="flip-left">
         <div className="signup bg-white lg:w-[30%] min-h-screen rounded-md p-10">
           <div className="text-[#238F26] font-semibold text-2xl text-center pb-8">
             Create an Account

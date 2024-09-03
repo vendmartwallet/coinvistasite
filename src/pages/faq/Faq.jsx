@@ -7,7 +7,7 @@ const Faq = () => {
   const Faq = (props) => {
     return (
       <>
-        <div className=" bg-[#1B334D] rounded-md py-3 px-5 flex justify-between items-center" data-aos="fade-down">
+        <div className=" bg-[#1B334D] rounded-md py-3 px-5 flex justify-between items-center" data-aos="fade-down" >
           <div className=" text-base text-[#EFD778]">{props.text}</div>
           <div>
             <MdOutlineAdd color="#EFD778" size="30" />

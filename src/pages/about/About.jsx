@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <div>
-        <div className="accType">
+        <div className="accType" data-aos="flip-down">
           <Navbar />
           <div
             className="ourplans text-center py-20 text-4xl font-semibold text-white"

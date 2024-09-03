@@ -8,7 +8,7 @@ const CustomerSupport = () => {
   return (
     <>
       <div>
-        <div className="contact">
+        <div className="contact" data-aos="flip-right">
           <Navbar />
           <div className="ourplans text-center py-20 text-4xl font-semibold text-white">
             CUSTOMER SUPPORT

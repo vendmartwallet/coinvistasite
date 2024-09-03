@@ -15,7 +15,7 @@ const AccountType = () => {
     return (
       <>
         <div>
-          <div className="bg-[#062B1F] text-[#E9D16F] mx-10 lg:w-[18vw] pt-8 rounded-2xl shadow-lg flex flex-col items-center">
+          <div className="bg-[#062B1F] text-[#E9D16F] mx-10 lg:w-[18vw] pt-8 rounded-2xl shadow-lg flex flex-col items-center" data-aos="flip-up">
             <h3 className="text-lg">{planName}</h3>
             <h1 className="text-5xl font-normal my-4">
               {planTitle1} <br /> <span>{planTitle2}</span>
