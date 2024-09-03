@@ -87,6 +87,7 @@ const Navbar = () => {
             className={`fixed sidebar bg-[#062B1F] px-3 lg:hidden overflow-scroll z-[99999] inset-y-0 left-0 w-64 transition-transform border-none duration-300 ease-in-out transform ${
               isNavOpen ? "translate-x-0" : "-translate-x-full"
             }`}
+            data-aos="fade-right"
           >
             <div className=" flex justify-between items-center pt-5">
               <div className="text-[#EFD777] font-bold">CoinVistaWealth</div>
