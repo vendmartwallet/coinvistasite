@@ -27,9 +27,14 @@ const TradingServices = () => {
         <div className="tradeservices">
           <div className="line h-2 bg-[#394151] rounded-md"></div>
           <div className="main py-24 text-center px-8 lg:px-24">
-            <div className="title text-4xl pb-10">OUR TRADING SERVICES</div>
+            <div className="title text-4xl pb-10" data-aos="fade-up">
+              OUR TRADING SERVICES
+            </div>
 
-            <div className="para text-lg lg:w-[680px] mx-auto text-[#3D4C58] items-center font-light">
+            <div
+              className="para text-lg lg:w-[680px] mx-auto text-[#3D4C58] items-center font-light"
+              data-aos="fade-down"
+            >
               We are Professional Traders & Portfolio Managers who return profit
               to investors, guaranteed and Regulated by the Securities and
               Exchange Commission. We offer optimum trading service that is
@@ -41,21 +46,27 @@ const TradingServices = () => {
         </div>
 
         <div className="services grid grid-cols-1 lg:grid-cols-3 pb-14 mx-24">
+          <div data-aos="fade-left">
           <Services
             img={Img1}
             title="Trusted Company"
             text="Trusted by thousands of people all over the world. Good reviews on all social channels."
           />
+          </div>
+          <div data-aos="fade-right">
           <Services
             img={Img2}
             title="Secured"
             text="TSecured blockchain transactions , Secured investors data and personal information. Top level ssl certification."
           />
+          </div>
+          <div data-aos="fade-left">
           <Services
             img={Img3}
             title="Privacy"
             text="All private information remains private. 10XSIGNAL never shares Private information to any third party."
-          />
+          /> 
+          </div>
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from "./pages/home/Home";
 import AccountType from "./pages/accountType/AccountType";
@@ -11,8 +11,14 @@ import Deposit from "./pages/deposit/Deposit";
 import Login from "./pages/login/Login";
 import SignUp from "./pages/signup/SignUp";
 import CustomerSupport from "./components/customerSupport/CustomerSupport";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // You can adjust the duration and other settings as needed
+  }, []);
   return (
     <div>
       <BrowserRouter>

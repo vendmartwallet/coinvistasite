@@ -2,7 +2,7 @@ import React from "react";
 
 const TransactionTable = ({ title, transactions }) => {
   return (
-    <div className="w-full max-w-md rounded-lg shadow-md overflow-hidden">
+    <div className="w-full max-w-md rounded-lg shadow-md overflow-hidden" data-aos="fade-right">
       <div className="bg-[#E2CC6D] p-4">
         <h2 className="text-center text-xl text-white font-bold">{title}</h2>
       </div>

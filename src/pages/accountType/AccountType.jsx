@@ -38,17 +38,26 @@ const AccountType = () => {
   return (
     <>
       <div>
-        <div className="accType">
+        <div className="accType" data-aos="flip-up">
           <Navbar />
-          <div className="ourplans text-center py-20 text-4xl font-semibold text-white">
+          <div
+            className="ourplans text-center py-20 text-4xl font-semibold text-white"
+            data-aos="fade-left"
+          >
             OUR PLANS
           </div>
           <div className="min-h-[100vh] py-20">
             <div className="px-5">
-              <div className="title text-3xl lg:text-5xl font-medium text-[#EFD778] text-center ">
+              <div
+                className="title text-3xl lg:text-5xl font-medium text-[#EFD778] text-center "
+                data-aos="fade-up"
+              >
                 OUR TRADING ACCOUNT TYPES
               </div>
-              <div className="txt text-[#1B334D] text-center lg:mx-auto lg:w-[40vw] pt-5 pb-16 text-lg">
+              <div
+                className="txt text-[#1B334D] text-center lg:mx-auto lg:w-[40vw] pt-5 pb-16 text-lg"
+                 data-aos="flip-down"
+              >
                 Our market offers clients different options when opening an
                 account. Depending on the trader type, there are various
                 accounts that may best suit your needs. If you open a premium
@@ -59,6 +68,7 @@ const AccountType = () => {
             </div>
 
             <div className=" lg:flex grid grid-cols-1 justify-center gap-6 lg:gap-0 items-center">
+              <div data-aos="flip-down">
               <Plan
                 planName="Plan A"
                 planTitle1="MINI"
@@ -68,7 +78,9 @@ const AccountType = () => {
                 maxAmount="5000"
                 buttonText="INVEST"
               />
+              </div>
 
+              <div data-aos="flip-down">
               <Plan
                 planName="Plan B"
                 planTitle1="SILVER"
@@ -78,7 +90,9 @@ const AccountType = () => {
                 maxAmount="5000"
                 buttonText="INVEST"
               />
+              </div>
 
+              <div data-aos="flip-down">
               <Plan
                 planName="Plan C"
                 planTitle1="GOLD"
@@ -88,7 +102,9 @@ const AccountType = () => {
                 maxAmount="5000"
                 buttonText="INVEST"
               />
+              </div>
 
+              <div data-aos="flip-down">
               <Plan
                 planName="Plan D"
                 planTitle1="PLATINUM"
@@ -98,6 +114,7 @@ const AccountType = () => {
                 maxAmount="5000"
                 buttonText="INVEST"
               />
+              </div>
             </div>
           </div>
           <Footer />

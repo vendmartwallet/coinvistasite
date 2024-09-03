@@ -19,7 +19,7 @@ const Ratings = () => {
     <>
       <div>
         <div className="h-3 bg-[#2C3E50]"></div>
-        <div className="flex justify-around items-center  bg-[#A8C5B8]">
+        <div className="flex justify-around items-center  bg-[#A8C5B8]" data-aos="fade-right">
           <Rating title="RUNNING DAYS" price="1560 DAYS" />
           <Rating title="TOTAL INVESTORS" price="20,000" />
           <Rating title="TOTAL INVESTED" price="$500,000" />

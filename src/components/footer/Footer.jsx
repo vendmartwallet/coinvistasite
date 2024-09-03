@@ -10,7 +10,7 @@ import LOGO from "../../assets/footerlogo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#062B1F] text-yellow-50 pt-10">
+    <footer className="bg-[#062B1F] text-yellow-50 pt-10" data-aos="flip-right">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center md:text-left">
@@ -80,13 +80,41 @@ const Footer = () => {
         <div className="mt-10">
           <h3 className="text-xl font-bold mb-4 text-center">PAYMENT METHOD</h3>
           <div className="flex justify-center space-x-4">
-            <img src={BTC} alt="BTC" className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale" />
-            <img src={XRP} alt="XRP" className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale" />
-            <img src={DOGE} alt="Doge" className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale" />
-            <img src={PM} alt="PM" className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale" />
-            <img src={ETH} alt="ETH" className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale" />
-            <img src={LTC} alt="LTC" className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale" />
-            <img src={TRON} alt="Tron" className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale" />
+            <img
+              src={BTC}
+              alt="BTC"
+              className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale"
+            />
+            <img
+              src={XRP}
+              alt="XRP"
+              className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale"
+            />
+            <img
+              src={DOGE}
+              alt="Doge"
+              className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale"
+            />
+            <img
+              src={PM}
+              alt="PM"
+              className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale"
+            />
+            <img
+              src={ETH}
+              alt="ETH"
+              className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale"
+            />
+            <img
+              src={LTC}
+              alt="LTC"
+              className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale"
+            />
+            <img
+              src={TRON}
+              alt="Tron"
+              className=" h-10 w-10 lg:h-28 lg:w-28 rounded-sm animate-scale"
+            />
           </div>
         </div>
       </div>

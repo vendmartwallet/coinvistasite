@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import BtcChart from "../../components/btcchart/BtcChart";
+import AbtComp from "../../components/abtComp/AbtComp";
 
 const About = () => {
   return (
@@ -8,10 +10,16 @@ const About = () => {
       <div>
         <div className="accType">
           <Navbar />
-          <div className="ourplans text-center py-20 text-4xl font-semibold text-white">
-          ABOUT US
+          <div
+            className="ourplans text-center py-20 text-4xl font-semibold text-white"
+            data-aos="fade-right"
+          >
+            ABOUT US
           </div>
-          <div className="h-[70vh]"></div>
+          <AbtComp />
+          <div className=" bg-[#]">
+            <BtcChart />
+          </div>
           <Footer />
         </div>
       </div>

@@ -76,7 +76,7 @@ const Navbar = () => {
             <IoMenuOutline size="35" />
           </div>
         </div>
-        <div className="coinprices">
+        <div className="coinprices" data-aos="fade-up">
           <TradingViewPrices />
         </div>
 
@@ -102,24 +102,24 @@ const Navbar = () => {
 
             <div className="navs pt-10">
               <ul className="text-white items-center gap-12">
-              <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
-                <Link to="/">HOME</Link>
-              </li>
-              <li className=" text-base hover:text-[#a08411] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
-                <Link to="/accountType">ACCOUNT TYPE</Link>
-              </li>
-              <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
-                <Link to="/faq">FAQ</Link>
-              </li>
-              <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
-                <Link to="/terms">TERMS</Link>
-              </li>
-              <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
-                <Link to="/contactUs">CONTACT US</Link>
-              </li>
-              <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
-                <Link to="/about">ABOUT US</Link>
-              </li>
+                <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
+                  <Link to="/">HOME</Link>
+                </li>
+                <li className=" text-base hover:text-[#a08411] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
+                  <Link to="/accountType">ACCOUNT TYPE</Link>
+                </li>
+                <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
+                  <Link to="/faq">FAQ</Link>
+                </li>
+                <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
+                  <Link to="/terms">TERMS</Link>
+                </li>
+                <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
+                  <Link to="/contactUs">CONTACT US</Link>
+                </li>
+                <li className=" text-base hover:text-[#EFD777] hover:border-b-4 border-[#E9D16F] pb-4 hover:cursor-pointer">
+                  <Link to="/about">ABOUT US</Link>
+                </li>
               </ul>
             </div>
           </div>

@@ -38,12 +38,18 @@ const Plans = () => {
     <>
       <div className="plans">
         <div className="title flex flex-col py-14">
-          <div className=" text-[#E9D16F] font-semibold font text-5xl  text-center">
+          <div
+            className=" text-[#E9D16F] font-semibold font text-5xl  text-center"
+            data-aos="fade-up"
+          >
             OUR PLANS
           </div>
           <div className="bg-[#E9D16F] mt-2 h-1 w-[9.7vw] mx-auto"></div>
         </div>
-        <div className=" lg:flex grid grid-cols-1 justify-center gap-6 lg:gap-0 items-center">
+        <div
+          className=" lg:flex grid grid-cols-1 justify-center gap-6 lg:gap-0 items-center"
+        >
+          <div data-aos="flip-up">
           <Plan
             planName="Plan A"
             planTitle1="MINI"
@@ -53,7 +59,9 @@ const Plans = () => {
             maxAmount="5000"
             buttonText="INVEST"
           />
+          </div>
 
+          <div data-aos="flip-up">
           <Plan
             planName="Plan B"
             planTitle1="SILVER"
@@ -63,7 +71,9 @@ const Plans = () => {
             maxAmount="5000"
             buttonText="INVEST"
           />
+          </div>
 
+          <div data-aos="flip-up">
           <Plan
             planName="Plan C"
             planTitle1="GOLD"
@@ -73,7 +83,9 @@ const Plans = () => {
             maxAmount="5000"
             buttonText="INVEST"
           />
+          </div>
 
+          <div data-aos="flip-up">
           <Plan
             planName="Plan D"
             planTitle1="PLATINUM"
@@ -83,10 +95,11 @@ const Plans = () => {
             maxAmount="5000"
             buttonText="INVEST"
           />
+          </div>
         </div>
 
         <div className="third lg:flex justify-around px-5 lg:px-20 text-white w-full py-8 lg:py-20">
-          <div className="texts lg:w-[50%]">
+          <div className="texts lg:w-[50%]" data-aos="fade-left">
             <div className="text-4xl font-medium pb-3">10XSIGNAL CARDS</div>
             <div className="text-base">
               The site is owned by 10XSIGNAL LTD. a registered company for
@@ -99,7 +112,7 @@ const Plans = () => {
             </button>
           </div>
 
-          <div className="imgview">
+          <div className="imgview" data-aos="fade-right">
             <img src={VisaCard} alt="" width="90%" />
           </div>
         </div>

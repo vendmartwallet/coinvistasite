@@ -5,7 +5,7 @@ const DashLoad = () => {
   return (
     <>
       <div>
-        <div className="dashLoad mt-6">
+        <div className="dashLoad mt-6" data-aos="flip-right">
           <TradingViewWidget />
         </div>
       </div>
