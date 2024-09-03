@@ -15,9 +15,12 @@ const AccountType = () => {
     return (
       <>
         <div>
-          <div className="bg-[#062B1F] text-[#E9D16F] mx-10 lg:w-[18vw] pt-8 rounded-2xl shadow-lg flex flex-col items-center" data-aos="flip-up">
+          <div
+            className="bg-[#062B1F] text-[#E9D16F] mx-10 lg:w-[18vw] pt-8 rounded-2xl shadow-lg flex flex-col items-center"
+            data-aos="flip-up"
+          >
             <h3 className="text-lg">{planName}</h3>
-            <h1 className="text-5xl font-normal my-4">
+            <h1 className="text-4xl font-normal my-4">
               {planTitle1} <br /> <span>{planTitle2}</span>
             </h1>
             <p className="text-xl mb-4">
@@ -56,7 +59,7 @@ const AccountType = () => {
               </div>
               <div
                 className="txt text-[#1B334D] text-center lg:mx-auto lg:w-[40vw] pt-5 pb-16 text-lg"
-                 data-aos="flip-down"
+                data-aos="flip-down"
               >
                 Our market offers clients different options when opening an
                 account. Depending on the trader type, there are various
@@ -69,51 +72,51 @@ const AccountType = () => {
 
             <div className=" lg:flex grid grid-cols-1 justify-center gap-6 lg:gap-0 items-center">
               <div data-aos="flip-down">
-              <Plan
-                planName="Plan A"
-                planTitle1="MINI"
-                planTitle2="PLAN"
-                interestRate="35"
-                minAmount="500"
-                maxAmount="5000"
-                buttonText="INVEST"
-              />
+                <Plan
+                  planName="Plan A"
+                  planTitle1="BASIC"
+                  planTitle2="PLAN"
+                  interestRate="100"
+                  minAmount="100"
+                  maxAmount="1,000"
+                  buttonText="INVEST"
+                />
               </div>
 
               <div data-aos="flip-down">
-              <Plan
-                planName="Plan B"
-                planTitle1="SILVER"
-                planTitle2="PLAN"
-                interestRate="35"
-                minAmount="500"
-                maxAmount="5000"
-                buttonText="INVEST"
-              />
+                <Plan
+                  planName="Plan B"
+                  planTitle1="CLASSIC"
+                  planTitle2="PLAN"
+                  interestRate="100"
+                  minAmount="1,000"
+                  maxAmount="15,000"
+                  buttonText="INVEST"
+                />
               </div>
 
               <div data-aos="flip-down">
-              <Plan
-                planName="Plan C"
-                planTitle1="GOLD"
-                planTitle2="PLAN"
-                interestRate="35"
-                minAmount="500"
-                maxAmount="5000"
-                buttonText="INVEST"
-              />
+                <Plan
+                  planName="Plan C"
+                  planTitle1="DIAMOND"
+                  planTitle2="PLAN"
+                  interestRate="100"
+                  minAmount="500"
+                  maxAmount="1,000"
+                  buttonText="INVEST"
+                />
               </div>
 
               <div data-aos="flip-down">
-              <Plan
-                planName="Plan D"
-                planTitle1="PLATINUM"
-                planTitle2="PLAN"
-                interestRate="35"
-                minAmount="500"
-                maxAmount="5000"
-                buttonText="INVEST"
-              />
+                <Plan
+                  planName="Plan D"
+                  planTitle1="EXPERT"
+                  planTitle2="PLAN"
+                  interestRate="100"
+                  minAmount="5,000"
+                  maxAmount="20,000"
+                  buttonText="INVEST"
+                />
               </div>
             </div>
           </div>
