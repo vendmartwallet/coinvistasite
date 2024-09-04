@@ -5,9 +5,10 @@ import { IoPersonAdd } from 'react-icons/io5';
 import Logo from '../../assets/coinwealth.jpg';
 import TradingViewPrices from '../tradingViewPrices/TradingViewPrices';
 import { IoMenuOutline, IoClose } from 'react-icons/io5';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/authContext';
 import { HiOutlineLogout } from 'react-icons/hi';
+import { toSignOut } from '../firebase/Auth';
 
 
 const Navbar = () => {
@@ -22,7 +23,9 @@ const Navbar = () => {
     setIsNavOpen(false);
   };
 
+  const navigate = useNavigate();
   const { userLoggedIn } = useAuth();
+
   return (
     <>
       <div>
@@ -37,6 +40,7 @@ const Navbar = () => {
           <div className="auths flex gap-5 font-semibold items-center">
             {userLoggedIn ? (
               <>
+               <div></div>
               </>
             ) : (
               <>
