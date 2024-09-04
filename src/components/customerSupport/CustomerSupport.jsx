@@ -23,7 +23,7 @@ const CustomerSupport = () => {
                 <h1 className="text-white text-[40px] sm:text-left text-center">
                   10xSignal Support
                 </h1>
-                <h1 className="text-white text-[20px] ">
+                <h1 className="text-white text-[20px]">
                   For inquiries, suggestions or complains. Mail us
                 </h1>
                 <h1 className="text-green-500 text-[30px] ">
