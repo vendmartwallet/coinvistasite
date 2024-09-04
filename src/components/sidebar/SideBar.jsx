@@ -12,6 +12,7 @@ const SideBar = () => {
   return (
     <>
       <div className="w-80 px-2 text-black  overflow-0 bg-[#071332] py-[30px]">
+        <Link to = "/userProfile">
         <div className="links">
           <FaRegUser size={40}/>
           <div>
@@ -19,6 +20,7 @@ const SideBar = () => {
             <p>UserEmail@gmail.com</p>
           </div>
         </div>
+        </Link>
 
         <nav className="py-[40px] flex flex-col gap-[15px] bg-[#3D5185] rounded">
           <Link to="/dashboard" className="links">
@@ -33,7 +35,7 @@ const SideBar = () => {
             <BiMoneyWithdraw />
             Withdrawal
           </Link>
-          <Link to="/transhistory" className="links">
+          <Link to="/transactions" className="links">
             <AiOutlineTransaction />
             Transaction history
           </Link>

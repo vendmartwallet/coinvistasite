@@ -13,6 +13,9 @@ import SignUp from "./pages/signup/SignUp";
 import CustomerSupport from "./components/customerSupport/CustomerSupport";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import UserProfile from "./pages/userProfile/UserProfile";
+import Withdrawal from "./pages/withdrawal/Withdrawal";
+import Transactions from "./pages/transactions/Transactions";
 
 
 const App = () => {
@@ -34,6 +37,9 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<SignUp />} />
           <Route path='/customer' element={<CustomerSupport/>} />
+          <Route path='/userProfile' element={<UserProfile />} />
+          <Route path='/withdrawal' element={<Withdrawal />} />
+          <Route path='/transactions' element={<Transactions />} />
 
         </Routes>
       </BrowserRouter>
