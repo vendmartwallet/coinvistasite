@@ -58,27 +58,11 @@ const SideBar = () => {
                 <HiOutlineLogout />
                 Logout
               </button>
-              {/* <div style={{ position: 'relative' }}>
-                <button onClick={toggleDropdown}>
-                  <FaRegUser size={25} />
-                </button>
-                {isProfileOpen && <UserDropdown />}
-              </div> */}
+             <div></div>
             </>
           ) : (
             <>
-              {/* <Link
-                to="/signup"
-                className="hover:cursor-pointer bg-[#1FAEEE] rounded-2xl text-white hover:bg-blue-800 px-5 py-2 hover:border-2 hover:border-[#41444bbb] whitespace-nowrap"
-              >
-                Sign up
-              </Link>
-              <Link
-                to="/signin"
-                className="hover:cursor-pointer border-2 border-[#787E90] rounded-2xl text-white hover:bg-white hover:text-black hover:border-none px-5 py-2"
-              >
-                Login
-              </Link> */}
+              <div></div>
             </>
           )}
         </nav>

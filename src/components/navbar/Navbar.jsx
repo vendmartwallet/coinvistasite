@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
-import { MdAttachEmail } from 'react-icons/md';
-import { PiSignInBold } from 'react-icons/pi';
-import { IoPersonAdd } from 'react-icons/io5';
-import Logo from '../../assets/coinwealth.jpg';
-import TradingViewPrices from '../tradingViewPrices/TradingViewPrices';
-import { IoMenuOutline, IoClose } from 'react-icons/io5';
-import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/authContext';
-import { HiOutlineLogout } from 'react-icons/hi';
-import { toSignOut } from '../firebase/Auth';
-
+import React, { useState } from "react";
+import { MdAttachEmail } from "react-icons/md";
+import { PiSignInBold } from "react-icons/pi";
+import { IoPersonAdd } from "react-icons/io5";
+import Logo from "../../assets/coinwealth.jpg";
+import TradingViewPrices from "../tradingViewPrices/TradingViewPrices";
+import { IoMenuOutline, IoClose } from "react-icons/io5";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/authContext";
+import { toSignOut } from "../firebase/Auth";
+import { MdDashboard } from "react-icons/md";
+import { RiLuggageDepositFill } from "react-icons/ri";
+import { BiMoneyWithdraw } from "react-icons/bi";
+import { AiOutlineTransaction } from "react-icons/ai";
+import { FcCustomerSupport } from "react-icons/fc";
+import { HiOutlineLogout } from "react-icons/hi";
+import { FaRegUser } from "react-icons/fa";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -33,27 +38,27 @@ const Navbar = () => {
           <div className="email flex hover:cursor-pointer gap-1 items-center">
             <span>
               <MdAttachEmail size="25" color="black" />
-            </span>{' '}
+            </span>{" "}
             info@10xsignal.com
           </div>
 
           <div className="auths flex gap-5 font-semibold items-center">
             {userLoggedIn ? (
               <>
-               <div></div>
+                <div></div>
               </>
             ) : (
               <>
                 <div className="login text-sm hover:cursor-pointer flex gap-1 items-center">
                   <span>
                     <PiSignInBold size="20" />
-                  </span>{' '}
+                  </span>{" "}
                   <Link to="/login">SIGN IN</Link>
                 </div>
                 <div className="signup text-sm hover:cursor-pointer flex gap-1 items-center">
                   <span>
                     <IoPersonAdd size="20" />
-                  </span>{' '}
+                  </span>{" "}
                   <Link to="/register">SIGN UP</Link>
                 </div>
               </>
@@ -99,8 +104,8 @@ const Navbar = () => {
           <div
             // data-aos="fade-up"
             // data-aos-duration="1000"
-            className={`fixed sidebar bg-[#062B1F] px-3 lg:hidden overflow-scroll z-[99999] inset-y-0 left-0 w-64 transition-transform border-none duration-300 ease-in-out transform ${
-              isNavOpen ? 'translate-x-0' : '-translate-x-full'
+            className={`fixed sidebar bg-[#062B1F] px-3 lg:hidden overflow-scroll z-[99999] inset-y-0 left-0 w-full transition-transform border-none duration-300 ease-in-out transform ${
+              isNavOpen ? "translate-x-0" : "-translate-x-full"
             }`}
             data-aos="fade-right"
           >
@@ -137,6 +142,63 @@ const Navbar = () => {
                   <Link to="/about">ABOUT US</Link>
                 </li>
               </ul>
+            </div>
+
+            <div>
+              <div className="w-full px-2 text-black rounded-xl overflow-0 bg-[#071332] py-[30px]">
+                <Link to="/userProfile">
+                  <div className="links">
+                    <FaRegUser size={40} />
+                    <div>
+                      <p>Hi, UserName</p>
+                      <p>UserEmail@gmail.com</p>
+                    </div>
+                  </div>
+                </Link>
+
+                <nav className="py-[40px] flex flex-col gap-[15px] bg-[#3D5185] rounded">
+                  <Link to="/dashboard" className="links">
+                    <MdDashboard />
+                    Dashboard
+                  </Link>
+                  <Link to="/deposit" className="links">
+                    <RiLuggageDepositFill />
+                    Deposit
+                  </Link>
+                  <Link to="/withdrawal" className="links">
+                    <BiMoneyWithdraw />
+                    Withdrawal
+                  </Link>
+                  <Link to="/transactions" className="links">
+                    <AiOutlineTransaction />
+                    Transaction history
+                  </Link>
+                  <Link to="/customer" className="links">
+                    <FcCustomerSupport />
+                    Customer support
+                  </Link>
+                  {userLoggedIn ? (
+                    <>
+                      <button
+                        onClick={() => {
+                          toSignOut().then(() => {
+                            navigate("/");
+                          });
+                        }}
+                        className="links"
+                      >
+                        <HiOutlineLogout />
+                        Logout
+                      </button>
+                      <div></div>
+                    </>
+                  ) : (
+                    <>
+                      <div></div>
+                    </>
+                  )}
+                </nav>
+              </div>
             </div>
           </div>
         )}
