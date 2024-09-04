@@ -6,6 +6,7 @@ import Navbar from '../../components/navbar/Navbar';
 import SideBar from '../../components/sidebar/SideBar';
 import Footer from '../../components/footer/Footer';
 import NextView from '../../components/nextview/NextView';
+import Usd from '../../assets/homehero/mobile/Btccmob.png'
 
 const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);
@@ -35,29 +36,21 @@ const Dashboard = () => {
             <p className="text-[30px] text-gray-400">
               Total Balance <span className="block text-[20px]">0.00USD</span>
             </p>
-            <HiMiniCurrencyDollar size={40} color="gold" />
+            <img src={Usd} alt="" className='w-[50px] h-[50px]'/>
           </div>
           <div className="flex flex-col sm:flex-row gap-[50px] pt-[40px]">
             <div className="bg-[#071332] w-[100%] sm:w-[50%] flex items-center justify-between rounded ml-[40px] sm:ml-0">
               <p className="bg-[#071332] text-gray-400 py-[20px] px-[3vw] rounded text-[30px]">
                 Deposit <span className="block text-[20px]">0.00USD</span>
               </p>
-              <HiMiniCurrencyDollar
-                size={40}
-                color="gold"
-                className="mr-[30px]"
-              />
+              <img src={Usd} alt="" className='w-[50px] h-[50px]'/>
             </div>
 
             <div className="bg-[#071332] w-[100%] sm:w-[50%] flex items-center justify-between rounded ml-[40px] sm:ml-0">
               <p className="bg-[#071332] text-gray-400 py-[20px] px-[3vw] rounded text-[30px]">
                 Profit <span className="block text-[20px]">0.00USD</span>
               </p>
-              <HiMiniCurrencyDollar
-                size={40}
-                color="gold"
-                className="mr-[30px]"
-              />
+              <img src={Usd} alt="" className='w-[50px] h-[50px]'/>
             </div>
           </div>
 

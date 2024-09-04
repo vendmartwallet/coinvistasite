@@ -54,4 +54,25 @@
       @apply bg-[#3D5185] border border-white w-[100%] sm:w-[34rem] py-[10px] pl-[5px] text-slate-400 text-[20px] px-[10px]
     }
 }
+
+
+.modal-overlay {
+  position: fixed;
+  top: 120px;
+  left: 0;
+  right: 40px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
   
