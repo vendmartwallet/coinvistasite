@@ -14,6 +14,21 @@ const SideBar = () => {
   const navigate = useNavigate();
   const { userLoggedIn } = useAuth();
 
+  const { currentUser } = useAuth();
+
+    function getUserNameFromEmail(email) {
+      const userName = email.match(/^[a-zA-Z]+/);
+      return userName ? userName[0] : '';
+    }
+    
+    let UpperName = ''; 
+    
+    if (currentUser && currentUser.email) {
+      const email = currentUser.email; 
+      const userName = getUserNameFromEmail(email);
+      UpperName = userName.charAt(0).toUpperCase() + userName.slice(1); 
+    }
+
   return (
     <>
       <div className="w-80 px-2 text-black  overflow-0 bg-[#071332] py-[30px]">
@@ -21,8 +36,8 @@ const SideBar = () => {
         <div className="links">
           <FaRegUser size={40} />
           <div>
-            <p>Hi, UserName</p>
-            <p>UserEmail@gmail.com</p>
+            <p>{UpperName}</p>
+            <p>{currentUser?.email}</p>
           </div>
         </div>
         </Link>

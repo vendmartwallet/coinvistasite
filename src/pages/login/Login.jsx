@@ -2,6 +2,9 @@ import React, {useState} from "react";
 import { Link, Navigate } from "react-router-dom";
 import { toSignInWithEmailAndPassword } from "../../components/firebase/Auth";
 import { useAuth } from "../../components/context/authContext";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Login = () => {
   const Spinner = ({ size = 30, color = '#000' }) => {
@@ -35,9 +38,9 @@ const Login = () => {
       try {
       setIsSigningIn(true);
       await toSignInWithEmailAndPassword(email, password);
-      alert(`Login successful, Welcome back ${currentUser.FullName}!`);
+      toast.success(`Login successful, Welcome back ${currentUser?.email}!`);
     } catch (error) {
-      alert(`There was an error logging in! Error: ${error.message}`);
+      toast.error(`There was an error logging in! Error: ${error.message}`);
     } finally {
       setIsSigningIn(false);
       setLoading(false);
