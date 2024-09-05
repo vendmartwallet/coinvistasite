@@ -145,6 +145,8 @@ const Navbar = () => {
             </div>
 
             <div>
+            {userLoggedIn ? (
+            <>
               <div className="w-full px-2 text-black rounded-xl overflow-0 bg-[#071332] py-[30px]">
                 <Link to="/userProfile">
                   <div className="links">
@@ -177,8 +179,10 @@ const Navbar = () => {
                     <FcCustomerSupport />
                     Customer support
                   </Link>
-                  {userLoggedIn ? (
-                    <>
+          
+                    <div>
+                      
+                    </div>
                       <button
                         onClick={() => {
                           toSignOut().then(() => {
@@ -191,14 +195,17 @@ const Navbar = () => {
                         Logout
                       </button>
                       <div></div>
-                    </>
-                  ) : (
-                    <>
-                      <div></div>
-                    </>
-                  )}
+                 
                 </nav>
               </div>
+             <div></div>
+            </>
+          ) : (
+            <>
+              <div></div>
+            </>
+          )}
+             
             </div>
           </div>
         )}

@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import { Link, Navigate } from "react-router-dom";
-import { useAuth } from "../../components/context/authContext";
-import { toCreateUserWithEmailAndPassword } from "../../components/firebase/Auth";
+import React, { useState } from 'react';
+import { Link, Navigate } from 'react-router-dom';
+import { useAuth } from '../../components/context/authContext';
+import { toCreateUserWithEmailAndPassword } from '../../components/firebase/Auth';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignUp = () => {
   const Spinner = ({ size = 30, color = '#000' }) => {
@@ -38,10 +40,14 @@ const SignUp = () => {
     if (!isRegistering) {
       try {
         setIsRegistering(true);
-        await toCreateUserWithEmailAndPassword(email, password, confirmPassword);
-        alert(`Sign up successful, welcome ${currentUser.FullName}`);
+        await toCreateUserWithEmailAndPassword(
+          email,
+          password,
+          confirmPassword
+        );
+        toast.success(`Sign up successful, Welcome ${currentUser?.email}!`);
       } catch (error) {
-        alert(error.message);
+        toast.error(`There was an error signing up! Error: ${error.message}`);
       } finally {
         setLoading(false);
         setIsRegistering(false);
@@ -51,8 +57,11 @@ const SignUp = () => {
 
   return (
     <>
-      {userLoggedIn && (<Navigate to={'/dashboard'} replace={true} />)}
-      <div className="bg-[#161C2D] min-h-screen flex flex-col px-5 lg:items-center py-16" data-aos="flip-left">
+      {userLoggedIn && <Navigate to={'/dashboard'} replace={true} />}
+      <div
+        className="bg-[#161C2D] min-h-screen flex flex-col px-5 lg:items-center py-16"
+        data-aos="flip-left"
+      >
         <div className="signup bg-white lg:w-[30%] min-h-screen rounded-md p-10">
           <div className="text-[#238F26] font-semibold text-2xl text-center pb-8">
             Create an Account
@@ -60,7 +69,10 @@ const SignUp = () => {
 
           <form onSubmit={handleSignup} className="flex flex-col gap-3">
             <div className="flex flex-col gap-2">
-              <label htmlFor="" className="text-[#238F26] font-medium text-base">
+              <label
+                htmlFor=""
+                className="text-[#238F26] font-medium text-base"
+              >
                 UserName
               </label>
               <input
@@ -72,7 +84,10 @@ const SignUp = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="" className="text-[#238F26] font-medium text-base">
+              <label
+                htmlFor=""
+                className="text-[#238F26] font-medium text-base"
+              >
                 FullName
               </label>
               <input
@@ -84,7 +99,10 @@ const SignUp = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="" className="text-[#238F26] font-medium text-base">
+              <label
+                htmlFor=""
+                className="text-[#238F26] font-medium text-base"
+              >
                 Your Email
               </label>
               <input
@@ -96,7 +114,10 @@ const SignUp = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="" className="text-[#238F26] font-medium text-base">
+              <label
+                htmlFor=""
+                className="text-[#238F26] font-medium text-base"
+              >
                 Phone Number
               </label>
               <input
@@ -108,7 +129,10 @@ const SignUp = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="" className="text-[#238F26] font-medium text-base">
+              <label
+                htmlFor=""
+                className="text-[#238F26] font-medium text-base"
+              >
                 Password
               </label>
               <input
@@ -120,7 +144,10 @@ const SignUp = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="" className="text-[#238F26] font-medium text-base">
+              <label
+                htmlFor=""
+                className="text-[#238F26] font-medium text-base"
+              >
                 Confirm Password
               </label>
               <input
@@ -132,7 +159,10 @@ const SignUp = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="" className="text-[#238F26] font-medium text-base">
+              <label
+                htmlFor=""
+                className="text-[#238F26] font-medium text-base"
+              >
                 Country
               </label>
               <input
@@ -152,7 +182,7 @@ const SignUp = () => {
             </button>
 
             <div className="rounded-lg font-light text-base py-3 text-center">
-              Already have an account?{" "}
+              Already have an account?{' '}
               <span className="text-[#017BFF] font-semibold text-lg">
                 <Link to="/login">Login</Link>
               </span>
